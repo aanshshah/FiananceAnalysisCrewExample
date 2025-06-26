@@ -1,0 +1,62 @@
+# Configuration for Financial Analysis Crew
+
+# Agent Configuration
+agents:
+  financial_analyst:
+    temperature: 0.1
+    max_iterations: 3
+    timeout: 120
+  
+  research_analyst:
+    temperature: 0.1
+    max_iterations: 3
+    timeout: 120
+  
+  investment_advisor:
+    temperature: 0.2
+    max_iterations: 2
+    timeout: 90
+
+# Crew Configuration
+crew:
+  process: sequential  # Options: sequential, hierarchical
+  memory: true
+  cache: true
+  max_rpm: 10
+  verbose: true
+
+# Analysis Settings
+analysis:
+  lookback_months: 6
+  include_competitors: true
+  include_technicals: false
+  risk_assessment_depth: detailed  # Options: basic, detailed, comprehensive
+
+# UI Configuration
+ui:
+  theme: light  # Options: light, dark
+  show_intermediate_steps: true
+  max_chat_history: 50
+  auto_scroll: true
+
+# Company List (for quick selection)
+companies:
+  tech:
+    - Apple
+    - Microsoft
+    - Google
+    - Amazon
+    - Meta
+    - Netflix
+    - Tesla
+    - NVIDIA
+  finance:
+    - JPMorgan Chase
+    - Bank of America
+    - Goldman Sachs
+    - Morgan Stanley
+  retail:
+    - Walmart
+    - Target
+    - Costco
+    - Home Depot

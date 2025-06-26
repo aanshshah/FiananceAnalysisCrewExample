@@ -1,0 +1,26 @@
+# Financial Analysis Crew AI - Requirements
+
+# Core dependencies
+crewai==0.28.8
+crewai-tools==0.1.6
+langchain==0.1.11
+langchain-openai==0.0.8
+langchain-community==0.0.27
+
+# Web interface
+streamlit==1.31.1
+
+# OpenAI
+openai==1.12.0
+
+# Utilities
+python-dotenv==1.0.1
+pydantic==2.6.1
+
+# Additional dependencies that may be needed
+requests==2.31.0
+beautifulsoup4==4.12.3
+
+# Enhanced UI dependencies (optional but recommended)
+plotly==5.18.0
+pandas==2.1.4
